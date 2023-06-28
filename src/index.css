@@ -27,3 +27,7 @@ margin: auto;
  flex: 1 1;
  margin: auto;
 }
+
+.margin-left-5{
+    margin-left: 5px !important;
+}

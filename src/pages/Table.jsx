@@ -53,7 +53,7 @@ const Table = () => {
 
   return (
     <div className="flex w-full h-screen">
-    <h1 className=' w-[20%] text-center bg-white'>App</h1>
+    <h1 className=' w-0 lg:w-[20%] text-center bg-white'>App</h1>
     <div className='w-full h-screen'>
       <div className='px-7 pt-28 flex flex-col bg-[#f2f2f2] cursor-pointer h-full overflow-auto'>
         <h1 className='text-[#33365f] text-2xl font-semibold'>Tables</h1>
@@ -63,9 +63,9 @@ const Table = () => {
             <h1 className='text-[#33365f] text-2xl font-semibold'>State Color</h1>
             <div className="flex space-x-5">
               <img src="https://flatlogic.github.io/sofia-react-template/static/media/searchIcon.ea6410cb.svg" alt="" />
-              <img src="https://flatlogic.github.io/sofia-react-template/static/media/cloudIcon.16c9d817.svg" alt="" />
+              <img className='hidden md:block' src="https://flatlogic.github.io/sofia-react-template/static/media/cloudIcon.16c9d817.svg" alt="" />
               <img src="https://flatlogic.github.io/sofia-react-template/static/media/printerIcon.7c676479.svg" alt="" />
-              <img src="https://flatlogic.github.io/sofia-react-template/static/media/optionsIcon.fd35aa2b.svg" alt="" />
+              <img className='hidden md:block' src="https://flatlogic.github.io/sofia-react-template/static/media/optionsIcon.fd35aa2b.svg" alt="" />
               <img src="https://flatlogic.github.io/sofia-react-template/static/media/funnelIcon.6c3b50d6.svg" alt="" />
             </div>
           </div>
@@ -110,12 +110,12 @@ const Table = () => {
                       />
                     </td>
                     <td className="px-6 py-2 flex items-center space-x-5">
-                    <img className='rounded-full w-12' src={item.img} alt="" />
-                    <h1>
+                    <img className='rounded-full w-9 md:w-12' src={item.img} alt="" />
+                    <span className='margin-left-5'>
                     {item.name}
-                    </h1>
+                    </span>
                     </td>
-                    <td className="px-6 py-2">{item.company}</td>
+                    <td className="px-6 py-2 text-center md:text-start">{item.company}</td>
                     <td className="px-6 py-2">{item.city}</td>
                     <td className="px-6 py-2">{item.state}</td>
                   </tr>
@@ -129,7 +129,7 @@ const Table = () => {
 
       <div className="bg-white rounded-lg mt-5">
           <div className="flex justify-between items-center p-5 px-5">
-            <h1 className='text-[#33365f] text-2xl font-semibold'>State Color</h1>
+            <h1 className='text-[#33365f] text-2xl font-semibold'>Material UI</h1>
             <div className="flex space-x-5">
             <CiMenuKebab className='text-2xl'/>             
             </div>
@@ -193,115 +193,112 @@ const Table = () => {
       {/* Second Table */}
 
 
-     <div className="flex justify-between">
-     <div className=" bg-white rounded-lg mt-5 relative w-[63%]">
+     <div className="flex-none lg:flex lg:flex-row  justify-between">
+     <div className=" bg-white rounded-lg mt-5 relative lg:w-[63%] w-full">
           <div className="flex justify-between items-center p-6">
-            <h1 className='text-[#33365f] text-2xl font-semibold'>Recent transaction</h1>
+            <h1 className='text-[#33365f] md:text-2xl font-semibold'>Recent transaction</h1>
             <div className="flex space-x-5">
               <Dropdown/>
             </div>
           </div>
           <div className="relative overflow-x-auto px-5 pb-5">
             <div className="bg-[#f2f2f2] p-3 rounded-lg flex justify-between items-center mb-4">
-
                    <div className="flex items-center space-x-4 font-[600] text-[#16365f]">
                    <img src="https://flatlogic.github.io/sofia-react-template/static/media/basketIcon.c4cf6004.svg" alt="" />
                    <span>Shopping</span>  
                    </div>
 
                    <div className="">
-                    <span className='font-[400] text-[#6b859e]'>05 Jun 2020 10:00</span>
+                    <span className='font-[400] text-[#6b859e] hidden md:block'>05 Jun 2020 10:00</span>
                    </div>
 
                    <div className="">
                     <span className='font-[600] text-[#16365f]'>$300</span>
                    </div>
 
-                   <div className="">
-                    <span className='text-[#6b859e] font-[400]'>Some text</span>
+                   <div className="hidden md:block">
+                    <span className='text-[#6b859e] hidden md:block font-[400]'>Some text</span>
                    </div>
 
-                   <div className="">
-                    <img src="https://flatlogic.github.io/sofia-react-template/static/media/moreIcon.394ddcb0.svg" alt="" />
+                   <div className="hidden md:block">
+                    <img className='hidden md:block' src="https://flatlogic.github.io/sofia-react-template/static/media/moreIcon.394ddcb0.svg" alt="" />
                    </div>
 
             </div>
-             <div className="bg-[#f2f2f2] p-3 rounded-lg flex justify-between items-center my-4">
-              
+            <div className="bg-[#f2f2f2] p-3 rounded-lg flex justify-between items-center mb-4">
                    <div className="flex items-center space-x-4 font-[600] text-[#16365f]">
-                   <img src="https://flatlogic.github.io/sofia-react-template/static/media/joystickIcon.38ec22f5.svg" alt="" />
+                   <img src="https://flatlogic.github.io/sofia-react-template/static/media/basketIcon.c4cf6004.svg" alt="" />
                    <span>Shopping</span>  
                    </div>
 
                    <div className="">
-                    <span className='font-[400] text-[#6b859e]'>05 Jun 2020 10:00</span>
+                    <span className='font-[400] text-[#6b859e] hidden md:block'>05 Jun 2020 10:00</span>
                    </div>
 
                    <div className="">
                     <span className='font-[600] text-[#16365f]'>$300</span>
                    </div>
 
-                   <div className="">
-                    <span className='text-[#6b859e] font-[400]'>Some text</span>
+                   <div className="hidden md:block">
+                    <span className='text-[#6b859e] hidden md:block font-[400]'>Some text</span>
                    </div>
 
-                   <div className="">
-                    <img src="https://flatlogic.github.io/sofia-react-template/static/media/moreIcon.394ddcb0.svg" alt="" />
+                   <div className="hidden md:block">
+                    <img className='hidden md:block' src="https://flatlogic.github.io/sofia-react-template/static/media/moreIcon.394ddcb0.svg" alt="" />
                    </div>
 
             </div>
-             <div className="bg-[#f2f2f2] p-3 rounded-lg flex justify-between items-center my-4">
-              
+            <div className="bg-[#f2f2f2] p-3 rounded-lg flex justify-between items-center mb-4">
                    <div className="flex items-center space-x-4 font-[600] text-[#16365f]">
-                   <img src="https://flatlogic.github.io/sofia-react-template/static/media/folderIcon.0c31484f.svg" alt="" />
+                   <img src="https://flatlogic.github.io/sofia-react-template/static/media/basketIcon.c4cf6004.svg" alt="" />
                    <span>Shopping</span>  
                    </div>
 
                    <div className="">
-                    <span className='font-[400] text-[#6b859e]'>05 Jun 2020 10:00</span>
+                    <span className='font-[400] text-[#6b859e] hidden md:block'>05 Jun 2020 10:00</span>
                    </div>
 
                    <div className="">
                     <span className='font-[600] text-[#16365f]'>$300</span>
                    </div>
 
-                   <div className="">
-                    <span className='text-[#6b859e] font-[400]'>Some text</span>
+                   <div className="hidden md:block">
+                    <span className='text-[#6b859e] hidden md:block font-[400]'>Some text</span>
                    </div>
 
-                   <div className="">
-                    <img src="https://flatlogic.github.io/sofia-react-template/static/media/moreIcon.394ddcb0.svg" alt="" />
+                   <div className="hidden md:block">
+                    <img className='hidden md:block' src="https://flatlogic.github.io/sofia-react-template/static/media/moreIcon.394ddcb0.svg" alt="" />
                    </div>
 
             </div>
-             <div className="bg-[#f2f2f2] p-3 rounded-lg flex justify-between items-center mt-4">
-              
+            <div className="bg-[#f2f2f2] p-3 rounded-lg flex justify-between items-center mb-4">
                    <div className="flex items-center space-x-4 font-[600] text-[#16365f]">
-                   <img src="https://flatlogic.github.io/sofia-react-template/static/media/bagIcon.585bd5b6.svg" alt="" />
+                   <img src="https://flatlogic.github.io/sofia-react-template/static/media/basketIcon.c4cf6004.svg" alt="" />
                    <span>Shopping</span>  
                    </div>
 
                    <div className="">
-                    <span className='font-[400] text-[#6b859e]'>05 Jun 2020 10:00</span>
+                    <span className='font-[400] text-[#6b859e] hidden md:block'>05 Jun 2020 10:00</span>
                    </div>
 
                    <div className="">
                     <span className='font-[600] text-[#16365f]'>$300</span>
                    </div>
 
-                   <div className="">
-                    <span className='text-[#6b859e] font-[400]'>Some text</span>
+                   <div className="hidden md:block">
+                    <span className='text-[#6b859e] hidden md:block font-[400]'>Some text</span>
                    </div>
 
-                   <div className="">
-                    <img src="https://flatlogic.github.io/sofia-react-template/static/media/moreIcon.394ddcb0.svg" alt="" />
+                   <div className="hidden md:block">
+                    <img className='hidden md:block' src="https://flatlogic.github.io/sofia-react-template/static/media/moreIcon.394ddcb0.svg" alt="" />
                    </div>
 
             </div>
+
           </div>
       </div>
       {/* Task */}
-      <div className="bg-white rounded-lg mt-5 relative w-[35%]">
+      <div className="bg-white rounded-lg mt-5 relative lg:w-[35%] md:w-full">
           <div className="flex justify-between items-center p-6">
             <h1 className='text-[#33365f] text-2xl font-semibold'>Task</h1>
           </div>
