@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import User from './Components/User'
+import Home from './Components/Home'
 
 function App() {
   
@@ -8,6 +9,12 @@ function App() {
     <div className="font-poppins">
       <User/>
     </div>
+
+    <>
+      <Home/>
+    </>
+    
+
   )
 }
 
