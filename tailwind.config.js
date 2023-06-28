@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
 export default {
   content: [
     "./index.html",
@@ -10,6 +11,7 @@ export default {
       'poppins' : ['Poppins', 'sans-serif']
   },
     extend: {},
+    
   },
   plugins: [
     require('flowbite/plugin')
