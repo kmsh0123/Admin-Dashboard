@@ -54,11 +54,11 @@ class HomeChart extends Component {
             enabled : true,
             enabledOnSeries: [1]
         },
-        // chart : {
-        //     toolbar : {
-        //         show : false
-        //     }
-        // },
+        chart : {
+          toolbar : {
+              show : false
+          }
+      },
         stroke: {
           width: [0, 1]
         },
@@ -81,9 +81,9 @@ class HomeChart extends Component {
 
   render() {
     return (
-      <div className="app tw-h-full">
-        <div className="row tw-h-full">
-          <div className="mixed-chart tw-h-full">
+      <div className="app h-full">
+        <div className="row h-full">
+          <div className="mixed-chart h-full">
             <Chart
               options={this.state.options}
               series={this.state.series}
