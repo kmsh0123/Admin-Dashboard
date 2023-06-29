@@ -1,21 +1,65 @@
+*{
+  box-sizing: border-box;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.bg-color{
+  background-color: #4d53e0;
+}
+body{
+  background-color: #f7f8fb;
+}
+.avatar {
+  /* white-space: nowrap; */
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle; 
+  width: 60px;
+  height: 60px;
+  margin-left: -1.5rem;
+
+};
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
-  box-sizing: border-box;
+tbody tr:nth-child(odd){background-color: #f2f2f2};
+
+.divide-line{
+    display: flex;
+    flex-direction: row;
+    font-size: .875rem;
+    font-weight: 400;
 }
+
+.divide-line::before{
+content: "";
+border-bottom: 1px solid #c7d0d9;
+flex: 1 1;
+margin: auto;
+}
+
+.divide-line::after{
+ content: "";
+ border-bottom: 1px solid #c7d0d9;
+ flex: 1 1;
+ margin: auto;
+}
+
+.margin-left-5{
+    margin-left: 5px !important;
+}
+
 
 #root{
   height: 100vh;
   background-color: #F7F8FB;
-}
-
-html {
-  font-family: "Poppins",sans-serif;
-  color: #2C365F;
 }
 
 .week-input{

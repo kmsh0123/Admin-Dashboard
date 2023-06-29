@@ -54,11 +54,11 @@ class HomeChart extends Component {
             enabled : true,
             enabledOnSeries: [1]
         },
-        chart : {
-            toolbar : {
-                show : false
-            }
-        },
+        // chart : {
+        //     toolbar : {
+        //         show : false
+        //     }
+        // },
         stroke: {
           width: [0, 1]
         },
