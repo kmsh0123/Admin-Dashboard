@@ -1,4 +1,5 @@
 import React from 'react'
+import Paths from '../Routes/Paths'
 import { Select } from '@mantine/core';
 import { FaAngleDown} from 'react-icons/fa'
 import HomeChart from './HomeChart';
@@ -15,6 +16,14 @@ import heatyellow from '../img/heartYellow.svg'
 import heatTeal from '../img/heartTeal.svg'
 import heatViolet from '../img/heartViolet.svg'
 import {AiFillHeart} from 'react-icons/ai'
+
+// const Home = () => {
+//   return (
+//   <div className="flex font-poppins w-full h-full">
+//     <h1 className=' w-[20%] text-center bg-white'>App</h1>
+//     <Paths/>
+//   </div>
+
 
 
 const Home = () => {
