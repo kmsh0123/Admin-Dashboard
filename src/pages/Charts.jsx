@@ -1,19 +1,20 @@
 import React from "react";
-import "./chart.css";
-import BreadCrumbs from "./BreadCrumbs";
 import { AiFillHeart } from "react-icons/ai";
 import LineChart from "../Components/charts/LineChart";
 import ColumnAreaChart from "../Components/charts/ColumnAreaChart";
-import DonutChart from "../Components/charts/DonutChart.";
+import DonutChart from "../Components/charts/DonutChart";
 import RadarChart from "../Components/charts/RadarChart";
 import AreaChart from "../Components/charts/AreaChart";
+import Navbar from "../Components/Navbar";
 
 const Chart = () => {
   return (
-    <main className="mx-auto mt-10 px-10">
+    <>
+    <Navbar/>
+    <main className="lg:pr-[1.25rem] lg:pl-[265px] pr-auto pl-auto">
       <div className="mb-10">
-        <h1 className="mb-2 text-xl font-semibold">Charts</h1>
-        <BreadCrumbs />
+        <h1 className="mb-2 text-xl font-semibold pl-3 lg:pl-auto">Charts</h1>
+        {/* <BreadCrumbs /> */}
       </div>
 
       {/* Charts */}
@@ -108,6 +109,9 @@ const Chart = () => {
         </div>
       </div>
     </main>
+    
+    </>
+    
   );
 };
 

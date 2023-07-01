@@ -1,5 +1,6 @@
 import React from "react";
 import { AiFillHeart } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const ErrorPage = () => {
   return (
@@ -14,7 +15,9 @@ const ErrorPage = () => {
           But we're here to bring you back to safety
         </p>
         <button className="font-bold text-white bg-red-400 w-40 mx-auto py-1 rounded-3xl">
-          Back to Home
+        <Link to="/home">
+            Back to Home
+          </Link>
         </button>
       </div>
 

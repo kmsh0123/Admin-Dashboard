@@ -22,6 +22,7 @@ import {
 import ApexCharts from "react-apexcharts";
 import { useState } from "react";
 
+
 // import { Chart } from "react-chartjs-2";
 // import {
 //   Chart as ChartJS,
@@ -34,7 +35,7 @@ import { useState } from "react";
 // } from "chart.js";
 
 // ChartJS.register(LineElement, LinearScale, CategoryScale, PointElement);
-const User = () => {
+const Profile = () => {
   const [active, setActive] = useState(1);
   const items = [
     { title: "Mantine", href: "#" },
@@ -394,7 +395,7 @@ const User = () => {
                  
                 </Navbar.Section>
 
-                <Navbar.Section>{/* Footer with user */}</Navbar.Section>
+                <Navbar.Section>{/* Footer with Profile */}</Navbar.Section>
               </Navbar>
             </div>
           </div>
@@ -588,4 +589,4 @@ const User = () => {
   );
 };
 
-export default User;
+export default Profile;
