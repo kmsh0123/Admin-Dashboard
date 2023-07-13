@@ -1,5 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+*{
+  box-sizing: border-box;
+}
+
+.bg-color{
+  background-color: #4d53e0;
+}
+body{
+  background-color: #f7f8fb;
+}
+.avatar {
+  /* white-space: nowrap; */
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle; 
+  width: 60px;
+  height: 60px;
+  margin-left: -1.5rem;
+
+};
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -205,14 +230,9 @@ input[type ='checkbox']:checked{
  
 
 .hover-primary-btn:hover{
-
     background-color: #2C34DA;
-
+   
 }
-
-
-
-
 .upgrade-btn:hover{
 
   background-color: #495057;
@@ -275,4 +295,14 @@ input[type ='checkbox']:checked{
 .breadcrumb-link.active2 {
   text-decoration: underline; 
   color: #ff6f61;
+}
+.noti::after{
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #FF5668;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
 }
