@@ -11,7 +11,7 @@
  
 
 .bg-color{
-  background-color: #4d53e0;
+  background-color: #ff6f61;
 }
 
 body{
@@ -135,13 +135,10 @@ margin: auto;
 
  
 
-input[type ='checkout']:checked{
+input[type ='checkbox']:checked{
 
-  accent-color: rgb(177, 226, 43);
-
+  color: #ff6f61;
 }
-
- 
 
 .bgColor{
 
@@ -149,8 +146,16 @@ input[type ='checkout']:checked{
 
 }
 
- 
+.text-card-svg{
+  image-rendering: auto;
+  height: auto;
+  max-width: 100%;
+  padding-top: -2.5rem;
+}
 
+.bgColor{
+  background-color: #F7F8FB;
+}
 .bgWhite{
 
   background-color: #ffffff !important;
@@ -203,8 +208,6 @@ input[type ='checkout']:checked{
 
     background-color: #2C34DA;
 
-   
-
 }
 
 
@@ -240,7 +243,36 @@ input[type ='checkout']:checked{
 
 }
 
+.chris{
+  z-index: 3;
+}
+.use{
+  z-index: 1;
+}
+.user-img{
+  width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
 .active{
-  background-color: #4d53e0;
+  background-color: #ff6f61;
   color: #f7f8fb;
+}
+
+.breadcrumb-link {
+  /* Add styles for breadcrumb links here */
+  text-decoration: none;
+  
+}
+
+.breadcrumb-link:hover {
+  /* Add hover styles for breadcrumb links here */
+}
+
+.breadcrumb-link.active2 {
+  text-decoration: underline; 
+  color: #ff6f61;
 }

@@ -6,6 +6,7 @@ import Table from '../pages/Table'
 import Login from '../pages/Login'
 import Profile from '../Components/Profile'
 import Chart from '../pages/Charts'
+import Form from '../Components/Form'
 
 const Paths = () => {
   return (
@@ -13,9 +14,10 @@ const Paths = () => {
         <Route path='/' element={<Login/>}/>
         <Route path='*' element={<ErrorPage/>}/>
         <Route path='/home' element={<Home/>}/>
-        <Route path='/chart' element={<Chart/>}/>
+        <Route path='/UIElement/chart' element={<Chart/>}/>
         <Route path='/table' element={<Table/>}/>
         <Route path='/profile' element={<Profile/>}/>
+        <Route path='/form' element={<Form/>}/>
     </Routes>
   )
 }

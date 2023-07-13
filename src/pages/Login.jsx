@@ -9,8 +9,7 @@ const Login = () => {
       e.preventDefault();
   }
   return (
-    <div className='flex justify-center min-h-screen w-full'>
-
+    <div className='flex justify-center min-h-screen w-full overflow-hidden'>
       <div className="bg-[#f2f2f2] w-full lg:w-1/2 p-2 lg:p-0 flex justify-center min-h-screen items-center">
         <div className="bg-white py-6 px-10 shadow-xl space-y-5 lg:w-[460px]">
             <div className="flex items-center justify-between">

@@ -78,14 +78,16 @@ const Table = () => {
 
 <Navbar/>
 
-        <div className='md:pl-64 md:pr-auto px-7 flex flex-col cursor-pointer h-full'>
-         <div className="my-3">
-         <h1 className='text-[#33365f] text-2xl font-semibold'>Tables</h1>
-          <BreadCrumb />
+        <div className='md:pl-[270px] md:pr-auto px-7 flex flex-col cursor-pointer h-full'>
+         <div className="pt-0 md:pt-7 mb-6">
+         <h1 className='text-[#ff6f61] text-xl font-semibold'>Tables</h1>
+         <div className="mt-2">
+         <BreadCrumb />
           </div> 
-          <div className="bg-white rounded-lg mt-5">
+          </div> 
+          <div className="bg-white rounded-lg">
             <div className="flex justify-between items-center p-5 px-5">
-              <h1 className='text-[#33365f] text-2xl font-semibold'>State Color</h1>
+              <h1 className='text-[#ff6f61] text-2xl font-semibold'>State Color</h1>
               <div className="flex space-x-5">
                 <img src="https://flatlogic.github.io/sofia-react-template/static/media/searchIcon.ea6410cb.svg" alt="" />
                 <img className='hidden md:block' src="https://flatlogic.github.io/sofia-react-template/static/media/cloudIcon.16c9d817.svg" alt="" />
@@ -124,7 +126,7 @@ const Table = () => {
                     key={item.id}
                     className={`bg-white dark:bg-gray-800 ${
                       selectedRows.includes(item.id) ? 'bg-gray-200' : ''
-                    } hover:bg-[#4d53e0] hover:text-[#fff]`}
+                    } hover:bg-[#ff6f61] hover:text-[#fff]`}
                   >
                       <td className="px-6 py-2">
                         <input
@@ -154,7 +156,7 @@ const Table = () => {
 
         <div className="bg-white rounded-lg mt-5">
             <div className="flex justify-between items-center p-5 px-5">
-              <h1 className='text-[#33365f] text-2xl font-semibold'>Material UI</h1>
+              <h1 className='text-[#ff6f61] text-2xl font-semibold'>Material UI</h1>
               <div className="flex space-x-5">
               <CiMenuKebab className='text-2xl'/>             
               </div>
@@ -189,7 +191,7 @@ const Table = () => {
                     key={item.id}
                     className={`bg-white dark:bg-gray-800 ${
                       selectedRows.includes(item.id) ? 'bg-gray-200' : ''
-                    } hover:bg-[#4d53e0] hover:text-[#fff]`}
+                    } hover:bg-[#ff6f61] hover:text-[#fff]`}
                   >
                       <td className="px-6 py-4">
                         <input
@@ -221,7 +223,7 @@ const Table = () => {
       <div className="flex-none lg:flex lg:flex-row  justify-between mb-5">
       <div className=" bg-white rounded-lg mt-5 relative lg:w-[63%] w-full">
             <div className="flex justify-between items-center p-6">
-              <h1 className='text-[#33365f] md:text-2xl font-semibold'>Recent transaction</h1>
+              <h1 className='text-[#ff6f61] md:text-2xl font-semibold'>Recent transaction</h1>
               <div className="flex space-x-5">
                 <Dropdown/>
               </div>
@@ -325,7 +327,7 @@ const Table = () => {
         {/* Task */}
         <div className="bg-white rounded-lg mt-5 relative lg:w-[35%] md:w-full">
             <div className="flex justify-between items-center p-6">
-              <h1 className='text-[#33365f] text-2xl font-semibold'>Task</h1>
+              <h1 className='text-[#ff6f61] text-2xl font-semibold'>Task</h1>
             </div>
             <div className="relative overflow-x-auto px-5 pb-5">
 

@@ -6,19 +6,20 @@ import DonutChart from "../Components/charts/DonutChart";
 import RadarChart from "../Components/charts/RadarChart";
 import AreaChart from "../Components/charts/AreaChart";
 import Navbar from "../Components/Navbar";
+import Breadcrumb from "../Components/BreadCrumb";
 
 const Chart = () => {
   return (
     <>
     <Navbar/>
     <main className="lg:pr-[1.25rem] lg:pl-[265px] pr-auto pl-auto">
-      <div className="mb-10">
-        <h1 className="mb-2 text-xl font-semibold pl-3 lg:pl-auto">Charts</h1>
-        {/* <BreadCrumbs /> */}
+      <div className="mb-6 pl-4 md:pl-[265px] lg:pl-1 pt-0 md:pt-7">
+        <h1 className="mb-2 text-xl font-semibold lg:pl-auto text-[#ff6f61]">Charts</h1>
+        <Breadcrumb/>
       </div>
 
       {/* Charts */}
-      <div className="">
+      <div className="md:pl-[16rem] md:pr-5 pl-0 pr-0 lg:pl-0 lg:pr-0">
         <div className="lg:grid lg:grid-cols-2 gap-5 ">
           {/* LeftSide Charts */}
           <div className="">
@@ -101,7 +102,7 @@ const Chart = () => {
 
       {/* Footer */}
       <div className="flex justify-center p-3 gap-3 items-center">
-        <p className="text-sm text-gray-500 ">
+        <p className="text-sm text-gray-500 md:pl-[7rem] md:pr-5 pl-0 pr-0 lg:pl-0 lg:pr-0">
           2021 © Flatlogic. Hand-crafted &amp; Made with
         </p>
         <div className="">

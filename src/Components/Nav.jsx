@@ -6,7 +6,6 @@ import { CiSearch } from "react-icons/ci";
 import { AiFillMessage } from "react-icons/ai";
 import { FaTasks, FaShoppingCart, FaCalendarAlt } from "react-icons/fa";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import {FiFileText} from "react-icons/fi"
 import { IoIosArrowDown, IoMdMenu } from "react-icons/io";
 import { BsPerson } from "react-icons/bs";
 import { TbMessages } from "react-icons/tb";
@@ -20,7 +19,7 @@ import { useDisclosure } from "@mantine/hooks";
 import { ScrollArea } from "@mantine/core";
 import { Link, NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+const Nav = () => {
   const [opened, { toggle }] = useDisclosure(false);
 
  
@@ -29,7 +28,7 @@ const Navbar = () => {
 
    
 
-    <div className='cursor-pointer'>
+    <div className=''>
 
       <aside
 
@@ -41,7 +40,7 @@ const Navbar = () => {
 
         >
 
-          <div className=" bg-[#1f1f1f] h-full px-3 py-4 overflow-y-auto">
+          <div className=" bg-white h-full px-3 py-4 overflow-y-auto">
 
             <Link to="/home" className="flex items-center pl-1 mb-5">
 
@@ -69,7 +68,7 @@ const Navbar = () => {
 
                   d="M15.3146 6.24536C15.3146 5.55731 14.7463 5 14.0463 5H14.0446L11.3296 5.00163C7.67797 5.0049 4.7063 7.92219 4.7063 11.5046V14.6033C4.7063 15.2898 5.27463 15.8487 5.97463 15.8487C6.67463 15.8487 7.24463 15.2898 7.24463 14.6033V11.5046C7.24463 9.2934 9.07796 7.49399 11.3313 7.49073L14.0463 7.48909C14.748 7.48909 15.3146 6.93178 15.3146 6.24536ZM28.6561 5.00049H26.0011C25.3011 5.00049 24.7328 5.5578 24.7328 6.24585C24.7328 6.93227 25.3011 7.48795 26.0011 7.48795H28.6561C30.9178 7.48795 32.7578 9.29225 32.7578 11.51V14.6038C32.7578 15.2903 33.3261 15.8492 34.0261 15.8492C34.7278 15.8492 35.2945 15.2903 35.2945 14.6038V11.51C35.2945 7.91941 32.3178 5.00049 28.6561 5.00049ZM15.3976 11.2378H24.6043C25.6126 11.2378 26.581 11.6349 27.286 12.3426C27.996 13.0568 28.3893 14.0161 28.3876 15.0147V17.0903C28.3793 17.3338 28.181 17.5316 27.9326 17.5381H12.066C11.8193 17.5299 11.621 17.3322 11.616 17.0903V15.0147C11.5976 12.9473 13.291 11.259 15.3976 11.2378Z"
 
-                  fill="#ff6f61"
+                  fill="#4D53E0"
 
                 />
 
@@ -77,13 +76,13 @@ const Navbar = () => {
 
                   d="M37.0651 20.0687H2.93675C2.23675 20.0687 1.66675 20.626 1.66675 21.3141C1.66675 22.0005 2.23675 22.5562 2.93675 22.5562H4.70508V28.4954C4.70508 32.0778 7.67841 34.9951 11.3301 34.9984L14.0451 35C14.7467 35 15.3134 34.4427 15.3151 33.7546C15.3151 33.0682 14.7467 32.5109 14.0467 32.5109L11.3334 32.5093C9.07841 32.506 7.24341 30.7066 7.24341 28.4954V22.5562H11.6151V24.2085C11.5984 26.2759 13.2901 27.9658 15.3967 27.9854H24.6034C26.7117 27.9658 28.4034 26.2759 28.3867 24.2085V22.5562H32.7584V28.4888C32.7584 30.7082 30.9184 32.5109 28.6567 32.5109H26.0017C25.3001 32.5109 24.7317 33.0682 24.7317 33.7546C24.7317 34.4427 25.3001 35 26.0017 35H28.6567C32.3167 35 35.2951 32.0811 35.2951 28.4888V22.5562H37.0651C37.7651 22.5562 38.3334 22.0005 38.3334 21.3141C38.3334 20.626 37.7651 20.0687 37.0651 20.0687Z"
 
-                  fill="#ff6f61"
+                  fill="#4D53E0"
 
                 />
 
               </svg>
 
-              <span className="self-center text-xl text-[#ff6f61] font-[700] whitespace-nowrap ml-[12px]">
+              <span className="self-center text-xl font-[700] whitespace-nowrap ml-[12px]">
 
                 SOFIA
 
@@ -99,7 +98,7 @@ const Navbar = () => {
 
                   to="/home"
 
-                  className="flex items-center justify-between px-[16px] mt-6 py-3 text-white rounded-[4px] focus:text-white focus:bg-[#ff6f61] "
+                  className="flex items-center justify-between px-[16px] mt-6 py-3 text-gray-900 rounded-[4px] focus:text-white focus:bg-[#4d53e0] "
 
                 >
 
@@ -142,7 +141,7 @@ const Navbar = () => {
 
                     to="/table"
 
-                    className="flex items-center justify-between px-[16px] py-3 mt-[8px] text-white rounded-lg focus:text-white focus:bg-[#ff6f61] "
+                    className="flex items-center justify-between px-[16px] py-3 mt-[8px] text-gray-900 rounded-lg focus:text-white focus:bg-[#4d53e0] "
 
                   >
 
@@ -168,38 +167,8 @@ const Navbar = () => {
 
                 <li className=" mt-[-6px]">
 
-              <NavLink
-
-                to="/form"
-
-                className="flex items-center justify-between px-[16px] py-3 mt-[8px] text-white rounded-lg focus:text-white focus:bg-[#ff6f61] "
-
-              >
-
-                <div className=" flex">
-
-                  <span className=" text-[22px]">
-
-                    <FiFileText />
-
-                  </span>
-
-                  <span className="text-[1rem] font-semibold ml-[6px]">
-
-                    Form
-
-                  </span>
-
-                </div>
-
-              </NavLink>
-
-                </li>
-
-                <li className=" mt-[-6px]">
-
                   <Link
-                    className="flex items-center justify-between mt-[2px] text-white rounded-lg "
+                    className="flex items-center justify-between mt-[2px] text-gray-900 rounded-lg "
 
                   >
 
@@ -233,9 +202,9 @@ const Navbar = () => {
 
                             {" "}
 
-                            <div className=" relative flex text-white">
+                            <div className=" relative flex">
 
-                              <span className=" mt-[4px] text-[17px] ">
+                              <span className=" mt-[4px] text-[17px]">
 
                                 <BsBox />
 
@@ -257,10 +226,10 @@ const Navbar = () => {
 
                             <div className=" items-center ml-[40px] flex flex-col">
 
-                              <ul className=" flex flex-col text-[17.5px] text-white gap-3 list-disc">
+                              <ul className=" flex flex-col text-[17.5px] text-[#16365f] gap-3 list-disc">
 
                                 <li>
-                                  <Link to="/UIElement/chart">
+                                  <Link to="/chart">
                                     Charts
                                   </Link>
                                 </li>
@@ -361,13 +330,13 @@ const Navbar = () => {
 
                       <Menu.Dropdown className=" shadow-lg rounded-xl">
 
-                        <div className=" px-[16px] py-5 w-[340px]">
+                        <div className=" px-[16px] py-5">
 
                           <Menu.Item component="a">
 
                             <div className=" text-gray-500 flex gap-3 text-[17px] font-[600]">
 
-                              <span className=" text-[#ff6f61] mt-1 text-[20px]">
+                              <span className=" text-[#4d53e0] mt-1 text-[20px]">
 
                                 <FaShoppingCart />
 
@@ -579,7 +548,7 @@ const Navbar = () => {
 
                               type="submit"
 
-                              className=" mt-10 relative bg-[#ff6f61] flex gap-1 items-center text-white font-[700] mb-[-10px] text-[16px] px-5 rounded-3xl w-25 h-11 mx-auto"
+                              className=" mt-10 relative bg-[#4d53e0] flex gap-1 items-center text-white font-[700] mb-[-10px] text-[16px] px-5 rounded-3xl w-25 h-11 mx-auto"
 
                             >
 
@@ -591,9 +560,7 @@ const Navbar = () => {
 
                                 </span>
 
-                               <Link to="/">
-                               <p>Logout</p>
-                               </Link>
+                                <p>Logout</p>
 
                               </div>
 
@@ -633,7 +600,7 @@ const Navbar = () => {
 
                     offsetScrollbars
 
-                    className=" bg-[#1f1f1f] py-1 h-[275px] rounded-xl w-[330px]"
+                    className=" bg-white py-1 h-[275px] rounded-xl w-[330px]"
 
                     h={250}
 
@@ -653,7 +620,7 @@ const Navbar = () => {
 
                             to="/home"
 
-                            className="flex items-center justify-between px-[16px] py-3 text-white rounded-[4px] focus:text-white focus:bg-[#ff6f61] "
+                            className="flex items-center justify-between px-[16px] py-3 text-gray-900 rounded-[4px] focus:text-white focus:bg-[#4d53e0] "
 
                           >
 
@@ -690,7 +657,7 @@ const Navbar = () => {
 
                               to="/table"
 
-                              className="flex items-center justify-between px-[16px] py-3 mt-[8px] text-white rounded-lg focus:text-white focus:bg-[#ff6f61] "
+                              className="flex items-center justify-between px-[16px] py-3 mt-[8px] text-gray-900 rounded-lg focus:text-white focus:bg-[#4d53e0] "
 
                             >
 
@@ -713,35 +680,6 @@ const Navbar = () => {
                             </NavLink>
 
                           </li>
-                          <li className=" mt-[-6px]">
-
-<NavLink
-
-  to="/form"
-
-  className="flex items-center justify-between px-[16px] py-3 mt-[8px] text-white rounded-lg focus:text-white focus:bg-[#ff6f61] "
-
->
-
-  <div className=" flex">
-
-    <span className=" text-[22px]">
-
-      <FiFileText />
-
-    </span>
-
-    <span className="text-[1rem] font-semibold ml-[6px]">
-
-      Form
-
-    </span>
-
-  </div>
-
-</NavLink>
-
-</li>
 {/* 
                           <li className=" mt-[-6px]">
 
@@ -749,7 +687,7 @@ const Navbar = () => {
 
                               to="/"
 
-                              className="flex items-center justify-between px-[16px] py-3 mt-[8px] text-white rounded-lg focus:text-white focus:bg-[#ff6f61] "
+                              className="flex items-center justify-between px-[16px] py-3 mt-[8px] text-gray-900 rounded-lg focus:text-white focus:bg-[#4d53e0] "
 
                             >
 
@@ -779,7 +717,7 @@ const Navbar = () => {
 
                               to=""
 
-                              className="flex items-center justify-between mt-[2px] text-white rounded-lg "
+                              className="flex items-center justify-between mt-[2px] text-gray-900 rounded-lg "
 
                             >
 
@@ -791,7 +729,7 @@ const Navbar = () => {
 
                                   chevron={
 
-                                    <MdKeyboardArrowRight size="2rem"/>
+                                    <MdKeyboardArrowRight size="2rem" />
 
                                   }
 
@@ -817,7 +755,7 @@ const Navbar = () => {
 
                                       {" "}
 
-                                      <div className=" relative flex text-white">
+                                      <div className=" relative flex">
 
                                         <span className=" mt-[4px] text-[17px]">
 
@@ -843,10 +781,10 @@ const Navbar = () => {
 
                                       <div className=" items-center ml-[-55px] flex flex-col">
 
-                                        <ul className=" flex flex-col mt-[6px] text-[17.5px] gap-3 list-disc text-white">
+                                        <ul className=" flex flex-col mt-[6px] text-[17.5px] text-[#16365f] gap-3 list-disc">
 
                                           <li>
-                                            <Link to="/UIElement/chart">
+                                            <Link to="/chart">
                                                 Charts
                                             </Link>
                                           </li>
@@ -915,7 +853,7 @@ const Navbar = () => {
 
             <div className=" md:flex items-center gap-3 hidden ">
 
-              <Menu position="bottom-end" shadow="md" width={340}>
+              <Menu position="bottom-end" shadow="md" >
 
                 <Menu.Target>
 
@@ -939,7 +877,7 @@ const Navbar = () => {
 
                       <div className=" text-gray-500 flex gap-3 text-[17px] font-[600]">
 
-                        <span className=" text-[#ff6f61] mt-1 text-[20px]">
+                        <span className=" text-[#4d53e0] mt-1 text-[20px]">
 
                           <FaShoppingCart />
 
@@ -1139,7 +1077,6 @@ const Navbar = () => {
 
                         </span>
 
-
                         <p>Messages</p>
 
                       </div>
@@ -1160,7 +1097,7 @@ const Navbar = () => {
 
                         type="submit"
 
-                        className=" mt-10 relative bg-[#ff6f61] flex gap-1 items-center text-white font-[700] mb-[-10px] text-[16px] px-5 rounded-3xl w-25 h-11 mx-auto"
+                        className=" mt-10 relative bg-[#4d53e0] flex gap-1 items-center text-white font-[700] mb-[-10px] text-[16px] px-5 rounded-3xl w-25 h-11 mx-auto"
 
                       >
 
@@ -1172,9 +1109,7 @@ const Navbar = () => {
 
                           </span>
 
-                          <Link to="/">
                           <p>Logout</p>
-                          </Link>
 
                         </div>
 
@@ -1201,4 +1136,4 @@ const Navbar = () => {
 
 }
 
-export default Navbar
+export default Nav

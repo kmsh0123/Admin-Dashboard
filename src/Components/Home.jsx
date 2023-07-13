@@ -30,47 +30,12 @@ import heartTeal from '../img/heartTeal.svg'
 
 import heatViolet from '../img/heartViolet.svg'
 
- 
-
 import {AiFillHeart} from 'react-icons/ai'
-
-import { LuHome } from "react-icons/lu";
-
-import { TbTypography } from "react-icons/tb";
-
-import { BsBox } from "react-icons/bs";
-
-import { BsBoxArrowRight } from "react-icons/bs";
-
-import { CiSearch } from "react-icons/ci";
-
-import { AiFillMessage } from "react-icons/ai";
-
-import { FaTasks, FaShoppingCart, FaCalendarAlt } from "react-icons/fa";
-
-import { MdKeyboardArrowRight } from "react-icons/md";
-
-import { IoIosArrowDown, IoMdMenu } from "react-icons/io";
-
-import { BsPerson } from "react-icons/bs";
-
-import { TbMessages } from "react-icons/tb";
-
-import { RiTableFill, RiNotification4Line } from "react-icons/ri";
-
-import { Accordion } from "@mantine/core";
-
-import { Input } from "@mantine/core";
-
-import { Menu, Button, Text } from "@mantine/core";
-
-import { Avatar } from "@mantine/core";
-
-import { Group, Collapse } from "@mantine/core";
 
 import { useDisclosure } from "@mantine/hooks";
 
 import { ScrollArea } from "@mantine/core";
+
 import Navbar from './Navbar';
 
  
@@ -84,64 +49,64 @@ const Home = () => {
   return (
     <div className=' h-full'>
       <Navbar/>
-      <div className=" ml-0 sm:ml-[250px] md:ml-[250px] h-full">   
-        <main className=' h-full flex flex-col w-full'>
+      <div className=" ml-0 sm:ml-[235px] md:ml-[235px] h-full">   
+        <section className=' h-[100vh] flex flex-col w-full'>
 
-          <main className='pt-[24px] pb-[50px] px-[24px] bgColor flex flex-col'>
+          <main className='pt-0 md:pt-[28px] pb-[50px] pl-5 pr-[10px] bgColor flex flex-col '>
 
             <div className=' mb-[24px]'>
 
-              <h1 className=' text-xl font-semibold ms-3'>Dashboard</h1>
+              <h1 className=' text-xl font-semibold ms-3 text-[#ff6f61]'>Dashboard</h1>
 
             </div>
 
-            <div className=' flex flex-col md:flex-row bgColor'>
+            <div className=' flex flex-col lg:flex-row bgColor'>
 
               {/* activities & meal */}
 
-              <div className=" w-full md:w-2/3">
+              <div className=" w-full md:w-full lg:w-2/3">
 
-                <div className=' flex flex-col md:flex-row'>
+                <div className=' flex flex-col md:flex-row px-3 gap-6 mb-6'>
 
                   {/* activities */}
 
-                  <div className=' w-full  md:w-1/2 px-3 mb-6'>
+                  <div className=' w-full h-auto md:w-1/2 '>
 
-                    <div className=' bgWhite rounded-xl '>
+                    <div className=' bgWhite rounded-xl h-full'>
 
-                        <div className=' flex  justify-between items-center p-7'>
+                      <div className=' flex  justify-between items-center p-6'>
 
-                          <p className=' font-semibold'>Your activity</p>
+                        <p className=' font-semibold'>Your activity</p>
 
-                            <div className=' w-24'>
+                          <div className=' w-24'>
 
-                            <Select
+                          <Select
 
-                              defaultValue={"Weekly"}
+                            defaultValue={"Weekly"}
 
-                              classNames={{input : 'week-input',dropdown: 'home-dropdown'}}
+                            classNames={{input : 'week-input',dropdown: 'home-dropdown'}}
 
-                              rightSection={<FaAngleDown size="1rem" color='#948C9E' />}
+                            rightSection={<FaAngleDown size="1rem" color='#948C9E' />}
 
-                              rightSectionWidth={30}
+                            rightSectionWidth={30}
 
-                              styles= {{dropdown : {top : '138px'}}}
+                            styles= {{dropdown : {top : '138px'}}}
 
-                              data={['Weekly', 'Daily', 'Monthly']}
+                            data={['Weekly', 'Daily', 'Monthly']}
 
-                            />
+                          />
 
-                            </div>
+                          </div>
 
-                         
+                      
 
-                        </div>
+                      </div>
 
-                        <div className=' h-[275px]'>
+                      <div className=' h-[290px]'>
 
-                          <HomeChart/>
+                        <HomeChart/>
 
-                        </div>
+                      </div>
 
                     </div>
 
@@ -149,9 +114,9 @@ const Home = () => {
 
                   {/* meals */}
 
-                  <div className=' w-full md:w-1/2 px-3 mb-6'>
+                  <div className=' w-full md:w-1/2 '>
 
-                    <div className=' bgWhite rounded-xl p-7'>
+                    <div className=' bgWhite rounded-xl p-7 pb-6'>
 
                         <div className=' flex  justify-between items-center '>
 
@@ -203,7 +168,7 @@ const Home = () => {
 
                           </div>
 
-                          <div className=' flex justify-between items-center px-4 py-3 my-4 bgColor rounded-xl'>
+                          <div className=' flex justify-between items-center px-4 py-3 my-6 bgColor rounded-xl'>
 
                             <div className=' flex'>
 
@@ -255,19 +220,19 @@ const Home = () => {
 
                 <div className='  px-3 mb-6 md:mb-0'>
 
-                    <div className=' bg-white rounded-xl flex flex-col md:flex-row items-center justify-between'>
+                    <div className=' bg-white rounded-xl flex flex-col lg:flex-row items-center justify-between'>
 
                       <div className=' p-4 md:p-7'>
 
                         <p className=' head3'>Upgrade your plan</p>
 
-                        <p className=' font-normal text-fs1'>So how did the classical Latin become so</p>
+                        <p className=' font-normal text-fs1 text-[#212529]'>So how did the classical Latin become so</p>
 
                         <div className=' mt-7 flex'>
 
                           <button className=' px-7 me-4 py-3 bgPrimary border-0 hover-primary-btn text-white rounded-full text-sm'>Go Premium</button>
 
-                          <button className=' px-7 py-3 border upgrade-btn border-slate-600 hover:border-none rounded-full text-sm'>Try for free</button>
+                          <button className=' px-7 py-3 border upgrade-btn border-slate-600 rounded-full text-sm'>Try for free</button>
 
                         </div>
 
@@ -287,33 +252,63 @@ const Home = () => {
 
                 {/* Text cards */}
 
-                <div className=' flex items-center px-3 mt-6 rounded flex-wrap'>
+                <div className=' flex flex-col lg:flex-row items-center px-3 mt-6 rounded flex-wrap gap-5'>
 
-                  <div className=' w-1/2 md:w-1/4 pe-3 pb-3 md:pb-0'>
+                  {/* cards */}
 
-                    <div className=' bg-white px-5 py-10 rounded-xl'>
+                  <div className=' w-full lg:w-[48.5%] flex gap-5'>
 
-                      <div className=' flex items-center'>
+                    <div className=' w-1/2 '>
 
-                        <div>
+                      <div className=' bg-white px-5 py-10 rounded-xl'>
 
-                          <img src={heatred} alt="" />
+                        <div className=' flex items-center'>
+
+                          <img src={heatred} alt="" className=' text-card-svg'/>
+
+                          <div className=' ms-3'>
+
+                            <p className=' text-fs1 font-semibold'>Text</p>
+
+                            <span className=' text-fs1 font-semibold'>Num <span className=' text-fs1 text-muted font-medium'> /ber</span></span>
+
+                          </div>
 
                         </div>
 
-                        <div className=' ms-3'>
+                        <div className=' h-[5px] bg-[#FFDFE3] rounded overflow-hidden mt-5'>
 
-                          <p className=' text-fs1 font-semibold'>Text</p>
-
-                          <span className=' text-fs1 font-semibold'>Num <span className=' text-fs1 text-muted font-medium'> /ber</span></span>
+                          <div className=' h-full bg-[#FF5668] w-2/3'></div>
 
                         </div>
 
                       </div>
 
-                      <div className=' h-[5px] bg-[#E9ECEF] rounded overflow-hidden mt-5'>
+                    </div>
 
-                        <div className=' h-full bg-[#FF5668] w-2/3'></div>
+                    <div className=' w-1/2 '>
+
+                      <div className=' bg-white px-5 py-10 rounded-xl'>
+
+                        <div className=' flex items-center'>
+
+                          <img src={heatyellow} alt="" className=' text-card-svg' />
+
+                          <div className=' ms-3'>
+
+                            <p className=' text-fs1 font-semibold'>Text</p>
+
+                            <span className=' text-fs1 font-semibold'>Num <span className=' text-fs1 text-muted font-medium'> /ber</span></span>
+
+                          </div>
+
+                        </div>
+
+                        <div className=' h-[5px] bg-[#FFF4D0] rounded overflow-hidden mt-5'>
+
+                          <div className=' h-full bg-[#FFC405] w-2/3'></div>
+
+                        </div>
 
                       </div>
 
@@ -321,95 +316,59 @@ const Home = () => {
 
                   </div>
 
-                  <div className=' w-1/2 md:w-1/4 px-3 pb-3 md:pb-0'>
+                  <div className=' w-full lg:w-[48.5%] flex gap-5'>
 
-                    <div className=' bg-white px-5 py-10 rounded-xl'>
+                    <div className=' w-1/2 '>
 
-                      <div className=' flex items-center'>
+                      <div className=' bg-white px-5 py-10 rounded-xl'>
 
-                        <div>
+                        <div className=' flex items-center'>
 
-                          <img src={heatyellow} alt="" />
+                          <img src={heartTeal} alt="" className=' text-card-svg' />
+
+                          <div className=' ms-3'>
+
+                            <p className=' text-fs1 font-semibold'>Text</p>
+
+                            <span className=' text-fs1 font-semibold'>Num <span className=' text-fs1 text-muted font-medium'> /ber</span></span>
+
+                          </div>
 
                         </div>
 
-                        <div className=' ms-3'>
+                        <div className=' h-[5px] bg-[#DBF7FA] rounded overflow-hidden mt-5'>
 
-                          <p className=' text-fs1 font-semibold'>Text</p>
-
-                          <span className=' text-fs1 font-semibold'>Num <span className=' text-fs1 text-muted font-medium'> /ber</span></span>
+                          <div className=' h-full bg-[#41D5E2] w-2/3'></div>
 
                         </div>
-
-                      </div>
-
-                      <div className=' h-[5px] bg-[#E9ECEF] rounded overflow-hidden mt-5'>
-
-                        <div className=' h-full bg-[#FFC405] w-2/3'></div>
 
                       </div>
 
                     </div>
 
-                  </div>
+                    <div className=' w-1/2 '>
 
-                  <div className=' w-1/2 md:w-1/4 px-3 pt-3 md:pt-0'>
+                      <div className=' bg-white px-5 py-10 rounded-xl'>
 
-                    <div className=' bg-white px-5 py-10 rounded-xl'>
-
-                      <div className=' flex items-center'>
-
-                        <div>
-
-                          <img src={heartTeal} alt="" />
-
-                        </div>
-
-                        <div className=' ms-3'>
-
-                          <p className=' text-fs1 font-semibold'>Text</p>
-
-                          <span className=' text-fs1 font-semibold'>Num <span className=' text-fs1 text-muted font-medium'> /ber</span></span>
-
-                        </div>
-
-                      </div>
-
-                      <div className=' h-[5px] bg-[#E9ECEF] rounded overflow-hidden mt-5'>
-
-                        <div className=' h-full bg-[#41D5E2] w-2/3'></div>
-
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div className=' w-1/2 md:w-1/4 ps-3 pt-3 md:pt-0'>
-
-                    <div className=' bg-white px-5 py-10 rounded-xl'>
-
-                      <div className=' flex items-center'>
-
-                        <div>
+                        <div className=' flex items-center'>
 
                           <img src={heatViolet} alt="" />
 
+                          <div className=' ms-3'>
+
+                            <p className=' text-fs1 font-semibold'>Text</p>
+
+                            <span className=' text-fs1 font-semibold'>Num <span className=' text-fs1 text-muted font-medium'> /ber</span></span>
+
+                          </div>
+
                         </div>
 
-                        <div className=' ms-3'>
+                        <div className=' h-[5px] bg-[#DDDFF9] rounded overflow-hidden mt-5'>
 
-                          <p className=' text-fs1 font-semibold'>Text</p>
-
-                          <span className=' text-fs1 font-semibold'>Num <span className=' text-fs1 text-muted font-medium'> /ber</span></span>
+                          <div className=' h-full bg-[#4D53E0] w-2/3'></div>
 
                         </div>
-
-                      </div>
-
-                      <div className=' h-[5px] bg-[#E9ECEF] rounded overflow-hidden mt-5'>
-
-                        <div className=' h-full bg-[#4D53E0] w-2/3'></div>
 
                       </div>
 
@@ -423,11 +382,11 @@ const Home = () => {
 
               {/* user card */}
 
-              <div className=" w-full md:w-1/3 px-3 my-10 md:mt-0">
+              <div className=" w-full md:w-full lg:w-1/3 px-3 my-6 lg:mt-0">
 
                 <div className=' bgWhite rounded-xl p-7'>
 
-                    <div className=' flex items-center'>
+                    <div className=' flex items-center flex-wrap'>
 
                       <img src={user1} alt="" className=' w-24 h-24 block me-5 ' />
 
@@ -559,7 +518,7 @@ const Home = () => {
 
                       <p className=' head1 font-semibold mb-4'>Appointments</p>
 
-                      <div className=' p-3 flex justify-evenly bgColor items-center mb-4'>
+                      <div className=' p-3 flex justify-evenly bgColor items-center mb-4 rounded-xl'>
 
                         <img src={gym} alt="" />
 
@@ -573,13 +532,13 @@ const Home = () => {
 
                         <div>
 
-                          <input type='checkbox' className=' '/>
+                          <input type='checkbox' className=' focus:ring-0' defaultChecked/>
 
                         </div>
 
                       </div>
 
-                      <div className=' p-3 flex justify-evenly bgColor items-center '>
+                      <div className=' p-3 flex justify-evenly bgColor items-center rounded-xl'>
 
                         <img src={therapy} alt="" />
 
@@ -593,7 +552,7 @@ const Home = () => {
 
                         <div>
 
-                          <input type='checkbox' className=' '/>
+                          <input type='checkbox' className=' focus:ring-0'/>
 
                         </div>
 
@@ -605,11 +564,11 @@ const Home = () => {
 
                     <div>
 
-                      <div className=' p-3 flex justify-evenly bg-[#FF3046] items-center mt-16 rounded-xl'>
+                      <div className=' p-3 py-7 flex justify-center bg-[#ff5668] transition-colors hover:bg-[#ff3046] items-center mt-16 rounded-xl'>
 
                         <img src={statis} alt="" />
 
-                        <div className=' text-white ms-2'>
+                        <div className=' text-white ms-4'>
 
                           <p className=' head2'>STATISTIC</p>
 
@@ -631,13 +590,13 @@ const Home = () => {
 
         {/* footer */}
 
-          <div className=' text-end bgColor mt-auto'>
+          <div className=' text-end bgColor mt-auto p-5'>
 
-            <p>2021 © Flatlogic. Hand-crafted & Made with <AiFillHeart className=' text-[#FF3046] inline-block'/></p>
+            <p className=''>2021 © Flatlogic. Hand-crafted & Made with <AiFillHeart className=' text-[#FF3046] inline-block'/></p>
 
           </div>
 
-        </main>
+        </section>
       </div>
     </div>
   )
